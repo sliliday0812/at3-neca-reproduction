@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+*.tar
+*.pt
+*.pth
+*.so
+*.o
+build/
+events.out.tfevents.*
+results/current/checkpoints/
+# Upstream dataset redistribution permission is separate from the code license.
+data/**/*.npy
+results/**/*.npy
+results/current/runtime-*.yaml

@@ -1,0 +1,10 @@
+# Install compatible PyTorch 2.5.1 + CUDA 11.8 first using its official instructions
+numpy==1.26.2
+PyYAML==6.0.2
+odl==0.8.3
+astra-toolbox==2.2.0
+tensorboard
+tqdm
+ninja
+future
+packaging
