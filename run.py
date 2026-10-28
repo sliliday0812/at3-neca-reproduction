@@ -3,7 +3,7 @@ from pathlib import Path
 import argparse,hashlib,subprocess,sys,zipfile
 ROOT=Path(__file__).resolve().parent
 ARCHIVE='AT3-NeCA-code.D26092110395彭楚天.zip'
-EXPECTED='8e23ce0c730fd37da79c28d3819eac63ea71ecbf8ec5c5669aa1ea2e8a36ebfa'
+EXPECTED='1154598dde54ea9728e13b5fee26282be2ab1a5b97d026fd6d0c7fffcfe9002e'
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
