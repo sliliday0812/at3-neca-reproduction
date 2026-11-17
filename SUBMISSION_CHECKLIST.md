@@ -8,21 +8,21 @@
 
 ## 應提交內容
 
-| 部分 | 本文件夾位置 | 用途 |
-|---|---|---|
-| ① | AT3-文獻結構化綜述.D26092110395彭楚天.docx | 6篇核心論文、方法矩陣、知識關係圖及批判分析，6頁 |
-| ① | AT3-一頁文獻摘要.D26092110395彭楚天.docx | 獨立1頁摘要 |
-| ② | AT3-NeCA復現說明.D26092110395彭楚天.docx | 實際結果、5張圖、論文對照、環境及過程，5頁 |
-| ② | GitHub：https://github.com/sliliday0812/at3-neca-reproduction | 可運行代碼、數據包、README與run.py入口；提交時同時貼上此連結 |
-| ③ | 第三部分-Agent/final-brief.md | 一頁含6處可追溯引用的正式簡報 |
-| ③ | 第三部分-Agent/task-contract.json | 共同任務與固定條件 |
-| ③ | 第三部分-Agent/tool-schema.json | 工具定義及安全範圍 |
-| ③ | 第三部分-Agent/trajectory.jsonl | 完成組真實工具請求 |
-| ③ | 第三部分-Agent/tool-results.jsonl | 完成組真實工具回應 |
-| ③ | 第三部分-Agent/evaluation.csv | 兩組結果、工具數、來源數與固定檔案雜湊 |
-| ③ | 第三部分-Agent/error-note.md | 短預算失敗、完成路徑、易錯步驟與限制 |
-| ③ | 第三部分-Agent/provenance.json | 來源、Agent／執行器及教師接受範圍 |
-| ③ | 第三部分-Agent/AT3-Agent分析.D26092110395彭楚天.docx | 2頁內分析 |
+| 部分 | 本文件夾位置                                                         | 用途                                   |
+| -- | -------------------------------------------------------------- | ------------------------------------ |
+| ①  | AT3-文獻結構化綜述.D26092110395彭楚天.docx                               | 6篇核心論文、方法矩陣、知識關係圖及批判分析，6頁            |
+| ①  | AT3-一頁文獻摘要.D26092110395彭楚天.docx                                | 獨立1頁摘要                               |
+| ②  | AT3-NeCA復現說明.D26092110395彭楚天.docx                              | 實際結果、5張圖、論文對照、環境及過程，5頁               |
+| ②  | GitHub：<https://github.com/sliliday0812/at3-neca-reproduction> | 可運行代碼、數據包、README與run.py入口；提交時同時貼上此連結 |
+| ③  | 第三部分-Agent/final-brief.md                                      | 一頁含6處可追溯引用的正式簡報                      |
+| ③  | 第三部分-Agent/task-contract.json                                  | 共同任務與固定條件                            |
+| ③  | 第三部分-Agent/tool-schema.json                                    | 工具定義及安全範圍                            |
+| ③  | 第三部分-Agent/trajectory.jsonl                                    | 完成組真實工具請求                            |
+| ③  | 第三部分-Agent/tool-results.jsonl                                  | 完成組真實工具回應                            |
+| ③  | 第三部分-Agent/evaluation.csv                                      | 兩組結果、工具數、來源數與固定檔案雜湊                  |
+| ③  | 第三部分-Agent/error-note.md                                       | 短預算失敗、完成路徑、易錯步驟與限制                   |
+| ③  | 第三部分-Agent/provenance.json                                     | 來源、Agent／執行器及教師接受範圍                  |
+| ③  | 第三部分-Agent/AT3-Agent分析.D26092110395彭楚天.docx                    | 2頁內分析                                |
 
 第三部分的sources/、scripts/、runs/及validation*.json是來源、兩組原始證據與重跑支持材料，隨第三部分一併保留。根目錄的軌跡是max6副本，並非另一次實驗。max3沒有簡報是預算耗盡的實際負結果，不是正式交付缺件。
 
@@ -42,5 +42,5 @@
 ## 仍需本人處理
 
 1. 確認老師是否接受NeCA相關的自建來源包與自建validator；若另有正式指定fixture／validator，應用正式材料重跑，不宣稱自建版已被認可。
-2. 取得老師的GitHub帳號並授予此私有倉庫訪問權限，確認老師已接受邀請並能打開連結。不要改成公開來替代權限確認。
+2. 倉庫已於2026-11-18依本人確認改為Public。直接提交GitHub連結即可，老師不需個別邀請或登入；提交前可自行以未登入瀏覽器確認連結能打開。
 3. 到課程平台核對截止日期、檔案格式／大小限制及最終提交狀態。MD只列遲交扣分，沒有寫具體截止日期。本次工作沒有代為在課程平台提交。
