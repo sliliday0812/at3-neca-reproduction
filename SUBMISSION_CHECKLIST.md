@@ -22,7 +22,7 @@
 | ③  | 第三部分-Agent/evaluation.csv                                      | 兩組結果、工具數、來源數與固定檔案雜湊                  |
 | ③  | 第三部分-Agent/error-note.md                                       | 短預算失敗、完成路徑、易錯步驟與限制                   |
 | ③  | 第三部分-Agent/provenance.json                                     | 來源、Agent／執行器及教師接受範圍                  |
-| ③  | 第三部分-Agent/AT3-Agent分析.D26092110395彭楚天.docx                    | 2頁內分析                                |
+| ③  | AT3-Agent分析.D26092110395彭楚天.docx                    | 2頁內分析                                |
 
 第三部分的sources/、scripts/、runs/及validation*.json是來源、兩組原始證據與重跑支持材料，隨第三部分一併保留。根目錄的軌跡是max6副本，並非另一次實驗。max3沒有簡報是預算耗盡的實際負結果，不是正式交付缺件。
 
