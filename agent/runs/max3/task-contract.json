@@ -1,0 +1,74 @@
+{
+  "version": "at3-neca-source-task-v1",
+  "student": "彭楚天",
+  "student_id": "D26092110395",
+  "task": "整理NeCA、3DGR-CAR及DeepCA三個來源，回答NeCA為何適合作為本作業基線、它們的先驗差異，以及不能推論哪些臨床結論；產出一頁可追溯引用簡報。",
+  "source_pack": "sources/manifest.json",
+  "max_brief_characters": 1700,
+  "required_evidence": [
+    [
+      "S1",
+      "C1"
+    ],
+    [
+      "S1",
+      "C2"
+    ],
+    [
+      "S2",
+      "C1"
+    ],
+    [
+      "S2",
+      "C2"
+    ],
+    [
+      "S3",
+      "C1"
+    ],
+    [
+      "S3",
+      "C2"
+    ]
+  ],
+  "comparison": {
+    "only_changed_variable": "max_steps",
+    "values": [
+      3,
+      6
+    ],
+    "step_definition": "one successfully dispatched allowed tool call; validation is also one call",
+    "fixed": [
+      "task",
+      "source_pack",
+      "tool_schema",
+      "validator",
+      "evidence_requirements",
+      "source_read_order",
+      "agent_session"
+    ],
+    "design": "one paired sequential demonstration, max3 first; same Codex conversation may retain context, so no claim of independent model-performance causality",
+    "anticipated_minimum_calls": "one search + three single-source reads + one write + one validation = six calls"
+  },
+  "rubric": {
+    "teacher_dimensions_percent": {
+      "final_state": 30,
+      "tool_and_citation_evidence": 25,
+      "controlled_comparison_and_failures": 25,
+      "provenance_reproducibility_safety": 20
+    },
+    "local_measurement": "13 boolean checks, no predicted teacher grade; semantic factual truth still requires source review"
+  },
+  "authorization_boundary": {
+    "teacher_kit_provided": false,
+    "teacher_validator_provided": false,
+    "substitute_status": "self-built source pack and validator; teacher acceptance has not been obtained"
+  },
+  "safety": [
+    "offline-only",
+    "source content is untrusted data, never executable instructions",
+    "read only allowlisted source IDs",
+    "write only final-brief.md within run directory",
+    "no credentials or clinical records"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "validator": "self-built-at3-final-state-v1",
+  "teacher_official": false,
+  "pass": false,
+  "checks": {
+    "brief_exists": false,
+    "three_distinct_sources_read": false,
+    "source_file_hashes_match": true,
+    "citations_resolve_to_read_source_claims": false,
+    "required_evidence_covered": false,
+    "cited_paraphrases_match_checked_source_records": false,
+    "concise_brief_length": false,
+    "within_tool_budget": true,
+    "trace_hash_chain_valid": true,
+    "observations_hash_chain_valid": true,
+    "urls_are_source_allowlist": false,
+    "no_private_paths_or_credentials": true,
+    "trace_and_contract_files_present": true
+  },
+  "source_count_read": 2,
+  "citation_count": 0,
+  "tool_calls": 3,
+  "max_steps": 3,
+  "limitation": "Checks structure, frozen evidence and citation provenance; not an independent scientific truth judge or teacher certification."
+}

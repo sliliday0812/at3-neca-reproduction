@@ -1,0 +1,11 @@
+{
+  "run_id": "max3",
+  "max_steps": 3,
+  "tool_calls": 3,
+  "read_sources": [
+    "S1",
+    "S2"
+  ],
+  "written": false,
+  "status": "budget_exhausted"
+}
