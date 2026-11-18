@@ -1,0 +1,39 @@
+{
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "1.26.2",
+    "matplotlib": "3.11.2",
+    "scikit_image": "0.26.0",
+    "scipy": "1.16.3",
+    "pyyaml": "6.0.3"
+  },
+  "commands": [
+    {
+      "command": "python run.py verify",
+      "exit": 0
+    },
+    {
+      "command": "python run.py evaluate",
+      "exit": 0
+    },
+    {
+      "command": "python run.py analyze-at4 --no-plot",
+      "exit": 0
+    },
+    {
+      "command": "python run.py agent-validate",
+      "exit": 0
+    },
+    {
+      "command": "python run.py agent-replay",
+      "exit": 0
+    },
+    {
+      "command": "python run.py agent-selfcheck",
+      "exit": 0
+    }
+  ],
+  "installation": "fresh task-local target installed from committed requirements.txt",
+  "gpu_training_reexecuted_in_this_check": false,
+  "negative_empty_output_retained": true
+}
