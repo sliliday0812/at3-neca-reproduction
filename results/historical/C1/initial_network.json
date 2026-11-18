@@ -1,0 +1,6 @@
+{
+  "case": "C1",
+  "seed": 42,
+  "network_initial_sha256": "f9d320e1cafb0514a172b82f7ef13af23c2d2f2a5cc228de8ab9b0d6cae31a2c",
+  "note": "instrumentation only; original author start loop/compute_loss called unchanged"
+}

@@ -1,0 +1,26 @@
+{
+  "case": "C1",
+  "seed": 42,
+  "seconds": 682.479104757309,
+  "epoch": 5000,
+  "optimizer_step": 5001,
+  "shape": [
+    64,
+    64,
+    64
+  ],
+  "finite": true,
+  "min": 5.1909105422964785e-06,
+  "max": 0.9999369382858276,
+  "foreground_at_0p5": 434,
+  "dice_A_reference": 0.33986928104575165,
+  "dice_B_deformed_reference": 0.3159041394335512,
+  "projection_mse_total": 0.029002036899328232,
+  "projection_mse_each_view": [
+    0.03167727589607239,
+    0.026326796039938927
+  ],
+  "reload_max_abs_difference": 0.0,
+  "checkpoint_sha256": "556ce4dcdccd8efc979889809df3b34564daad8927e9b4bff477040a11db8ef7",
+  "meaning": "one digital same-source processed case; static output A-reference task adaptation; no clinical or independent generalization claim; no GT in loss"
+}
