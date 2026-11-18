@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-18",
+  "remote_run_script_sha256": "154063035298d1e2b0aaf21c6b2ed93aea6838559f4c4e9b7273dfe8d1b29054",
+  "public_wrapper_difference": "paths and safe default output results/rerun; pinned author vendor core unchanged",
+  "four_new_conditions_complete": true,
+  "optimizer_updates": [
+    5001,
+    5001,
+    1001,
+    3001
+  ],
+  "training_wrapper_exits": [
+    0,
+    0,
+    1,
+    0
+  ],
+  "empty_1001_retained_negative": true,
+  "output_finite_and_reload_pass": true,
+  "independent_metrics_verified": true,
+  "remote_local_hash_matches": 12,
+  "original_vendor_files_unchanged": 23,
+  "references_domain": 10,
+  "references_total": 11,
+  "paper_pages": 9,
+  "slides": 14,
+  "notes": 14,
+  "teacher_source_pack_acceptance_confirmed": false,
+  "scope": "one processed synthetic case; no clinical validation or patient-level inference"
+}

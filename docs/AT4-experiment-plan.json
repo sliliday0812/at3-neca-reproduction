@@ -1,0 +1,20 @@
+{
+  "frozen_before_new_runs": true,
+  "date": "2026-11-18",
+  "question": "same-case seed stability and optimization budget sensitivity",
+  "training_inputs": "same archived 64^3 single digital reference via fixed observed 2x128^2 projections",
+  "threshold": 0.5,
+  "threshold_rule": ">",
+  "selection": "report all planned runs, no GT-based checkpoint or seed selection",
+  "runs": [
+    {"name":"seed0_e5000","seed":0,"epoch_index_max":5000,"optimizer_updates_expected":5001},
+    {"name":"seed1_e5000","seed":1,"epoch_index_max":5000,"optimizer_updates_expected":5001},
+    {"name":"seed42_e1000","seed":42,"epoch_index_max":1000,"optimizer_updates_expected":1001},
+    {"name":"seed42_e3000","seed":42,"epoch_index_max":3000,"optimizer_updates_expected":3001}
+  ],
+  "existing_reference_run": "AT3 current seed42_e5000, 2026-10-28; disclose date and reuse",
+  "fixed": ["observations","geometry","learning rate schedule","network","loss","upstream code","voxel resolution","no postprocessing"],
+  "analyses": ["Dice","IoU","projection MSE","foreground count","time excluding first compilation","checkpoint reload error"],
+  "replication_unit": "random initialization on one processed case, not patients",
+  "statistics": "show individual seeds and sample SD, n=3 computational repeats; no population inference"
+}

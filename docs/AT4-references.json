@@ -1,0 +1,480 @@
+{
+  "access_date": "2026-11-18",
+  "scope": "Targeted critical comparison for the approved AT4 NeCA report; not a systematic or exhaustive review.",
+  "domain_reference_count": 10,
+  "software_or_ai_assistance_reference_count": 1,
+  "citation_key_policy": "P1–P10 are domain references; P11 is optional method/AI-assistance disclosure and must not inflate domain count.",
+  "references": [
+    {
+      "id": "P1",
+      "authors": [
+        "Yiying Wang",
+        "Abhirup Banerjee",
+        "Vicente Grau"
+      ],
+      "title": "NeCA: 3D Coronary Artery Tree Reconstruction from Two 2D Projections via Neural Implicit Representation",
+      "venue": "Bioengineering",
+      "year": 2024,
+      "publication_type": "journal",
+      "key": "Wang2024NeCA",
+      "short": "NeCA",
+      "counts_toward_domain_minimum": true,
+      "doi": "10.3390/bioengineering11121227",
+      "official_url": "https://www.mdpi.com/2306-5354/11/12/1227",
+      "fulltext_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11673243/",
+      "authors_repository": "https://github.com/WangStephen/NeCA",
+      "local_text": "evidence/neca_readable.txt",
+      "claims": [
+        {
+          "claim": "兩張模擬投影即可逐例優化冠脈佔據場，不需跨病例預訓練。",
+          "locator": "§2.1–2.2; Fig.2"
+        },
+        {
+          "claim": "67 RCA與79 LAD條目來自已分割CCTA，非真實ICA配對三維驗證。",
+          "locator": "§2.1; §4"
+        },
+        {
+          "claim": "clDice不全面勝過3D U-Net；128³、5000步約一小時。",
+          "locator": "Tables3/5; §4"
+        }
+      ],
+      "boundaries": [
+        "Simulated projections from segmented CCTA, uniform attenuation=1",
+        "No real-ICA 3D validation",
+        "Single static shape; no explicit motion field",
+        "Approximately one hour at 128^3/5000 iterations; U-Net has higher clDice"
+      ],
+      "fresh_metadata_check": "2026-11-18; primary publisher/conference/author page checked",
+      "reading_status": "Reused archived original-paper full text; targeted method/data/evaluation/limitation passages reread in this task.",
+      "volume": "11",
+      "issue": "12",
+      "article": "1227"
+    },
+    {
+      "id": "P2",
+      "authors": [
+        "Xueming Fu",
+        "Yingtai Li",
+        "Fenghe Tang",
+        "Jun Li",
+        "Mingyue Zhao",
+        "Gao-Jun Teng",
+        "S. Kevin Zhou"
+      ],
+      "title": "3DGR-CAR: Coronary artery reconstruction from ultra-sparse 2D X-ray views with a 3D Gaussians representation",
+      "venue": "MICCAI 2024",
+      "year": 2024,
+      "publication_type": "main_conference",
+      "key": "Fu20243DGRCAR",
+      "short": "3DGR-CAR",
+      "counts_toward_domain_minimum": true,
+      "doi": "10.1007/978-3-031-72104-5_2",
+      "official_url": "https://papers.miccai.org/miccai-2024/005-Paper1015.html",
+      "fulltext_url": "https://papers.miccai.org/miccai-2024/paper/1015_paper.pdf",
+      "authors_repository": "https://github.com/windrise/3DGR-CAR",
+      "local_text": "evidence/3dgr_car.txt",
+      "claims": [
+        {
+          "claim": "以監督式高斯中心預測器初始化，再以雙視角損失優化高斯。",
+          "locator": "§2.1–2.2; Fig.2"
+        },
+        {
+          "claim": "ImageCAS用960例訓練中心預測器、20例選擇、20例測試；ASOCA另20例選擇、20例測試。",
+          "locator": "§3.1; PDF pp.6–7"
+        },
+        {
+          "claim": "重建輸入為CCTA衍生投影，不是已證明的真實雙視角臨床三維準確性。",
+          "locator": "§3.1; Table1"
+        }
+      ],
+      "boundaries": [
+        "Synthetic CCTA-derived projections",
+        "Needs supervised GCP, unlike NeCA",
+        "Static representation",
+        "Official repository is labelled demo; complete paper pipeline availability is a separate audit"
+      ],
+      "fresh_metadata_check": "2026-11-18; primary publisher/conference/author page checked",
+      "reading_status": "Reused archived original-paper full text; targeted method/data/evaluation/limitation passages reread in this task."
+    },
+    {
+      "id": "P3",
+      "authors": [
+        "Yiying Wang",
+        "Abhirup Banerjee",
+        "Robin P. Choudhury",
+        "Vicente Grau"
+      ],
+      "title": "DeepCA: Deep Learning-Based 3D Coronary Artery Tree Reconstruction from Two 2D Non-Simultaneous X-Ray Angiography Projections",
+      "venue": "WACV 2025",
+      "year": 2025,
+      "publication_type": "main_conference",
+      "key": "Wang2025DeepCA",
+      "short": "DeepCA",
+      "counts_toward_domain_minimum": true,
+      "doi": null,
+      "official_url": "https://openaccess.thecvf.com/content/WACV2025/html/Wang_DeepCA_Deep_Learning-Based_3D_Coronary_Artery_Tree_Reconstruction_from_Two_WACV_2025_paper.html",
+      "fulltext_url": "https://openaccess.thecvf.com/content/WACV2025/papers/Wang_DeepCA_Deep_Learning-Based_3D_Coronary_Artery_Tree_Reconstruction_from_Two_WACV_2025_paper.pdf",
+      "authors_repository": "https://github.com/WangStephen/DeepCA",
+      "local_text": "evidence/deepca.txt",
+      "claims": [
+        {
+          "claim": "WCGAN-GP、潛在卷積Transformer與蛇形卷積critic形成監督式重建框架。",
+          "locator": "§3; Fig.2"
+        },
+        {
+          "claim": "879 RCA條目作合成資料；臨床8名患者，僅2名有第三視角。",
+          "locator": "§4.1; PDF p.6"
+        },
+        {
+          "claim": "臨床評估為投影後配準的二維指標，不是配對臨床三維真值。",
+          "locator": "§4.3; Table1; Supplement A–B"
+        }
+      ],
+      "boundaries": [
+        "Training motion is rigid rotation/translation; does not establish arbitrary local nonrigid correction",
+        "No clinical paired 3D GT",
+        "Clinical reprojection after registration is not absolute 3D validation",
+        "879 entries are not confirmed 879 independent patients"
+      ],
+      "fresh_metadata_check": "2026-11-18; primary publisher/conference/author page checked",
+      "reading_status": "Reused archived original-paper full text; targeted method/data/evaluation/limitation passages reread in this task.",
+      "doi_note": "The fresh CVF page exposes title/authors/venue/pages but not DOI; official URL is supplied rather than importing an unrefreshed DOI.",
+      "pages": "337–346"
+    },
+    {
+      "id": "P4",
+      "authors": [
+        "Yinheng Zhu",
+        "Yong Wang",
+        "Chunxia Di",
+        "Hanghang Liu",
+        "Fangzhou Liao",
+        "Shaohua Ma"
+      ],
+      "title": "Sparse and transferable three-dimensional dynamic vascular reconstruction for instantaneous diagnosis",
+      "venue": "Nature Machine Intelligence",
+      "year": 2025,
+      "publication_type": "journal",
+      "key": "Zhu2025AutoCAR",
+      "short": "AutoCAR",
+      "counts_toward_domain_minimum": true,
+      "doi": "10.1038/s42256-025-01025-7",
+      "official_url": "https://www.nature.com/articles/s42256-025-01025-7",
+      "fulltext_url": "https://www.nature.com/articles/s42256-025-01025-7",
+      "authors_repository": "https://github.com/zhuyinheng/autocar_release",
+      "local_text": "evidence/autocar_prior_fulltext.txt",
+      "claims": [
+        {
+          "claim": "姿態域適應、稀疏反投影與血管圖優化構成動態重建流程。",
+          "locator": "Fig.2; Methods"
+        },
+        {
+          "claim": "真實造影以二維對應coverage/EPE/accuracy評估；1.8 mm是對應EPE。",
+          "locator": "Table2, printed p.734; Methods evaluation pp.739–740"
+        },
+        {
+          "claim": "合成三維指標和真實二維指標分開，不能以後者宣稱臨床三維誤差。",
+          "locator": "Tables1–2; Discussion"
+        }
+      ],
+      "boundaries": [
+        "Different temporal task from static two-frame NeCA",
+        "Real evaluation lacks paired 3D truth",
+        "Training priors and graph optimization add implementation dependencies",
+        "Approx.7s/frame includes6s graph optimization; not30fps"
+      ],
+      "fresh_metadata_check": "2026-11-18; primary publisher/conference/author page checked",
+      "reading_status": "Archived original-paper transcription reread; fresh publisher search record and author project page verified. Fresh publisher full-text open redirected to inaccessible idp.nature.com; no claim of a fresh PDF download.",
+      "author_project_url": "https://autocar.zyh.sh/",
+      "volume": "7",
+      "issue": "5",
+      "pages": "730–742"
+    },
+    {
+      "id": "P5",
+      "authors": [
+        "Yuanhao Cai",
+        "Jiahao Wang",
+        "Alan Yuille",
+        "Zongwei Zhou",
+        "Angtian Wang"
+      ],
+      "title": "Structure-Aware Sparse-View X-ray 3D Reconstruction",
+      "venue": "CVPR 2024",
+      "year": 2024,
+      "publication_type": "main_conference",
+      "key": "Cai2024SAXNeRF",
+      "short": "SAX-NeRF",
+      "counts_toward_domain_minimum": true,
+      "doi": null,
+      "official_url": "https://openaccess.thecvf.com/content/CVPR2024/html/Cai_Structure-Aware_Sparse-View_X-ray_3D_Reconstruction_CVPR_2024_paper.html",
+      "fulltext_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Cai_Structure-Aware_Sparse-View_X-ray_3D_Reconstruction_CVPR_2024_paper.pdf",
+      "authors_repository": "https://github.com/caiyuanhao1998/SAX-NeRF",
+      "local_text": "evidence/sax_nerf.txt",
+      "claims": [
+        {
+          "claim": "Lineformer建模射線內線段關係，搭配masked local-global射線採樣。",
+          "locator": "§3; Figs.2–4"
+        },
+        {
+          "claim": "每場景50張訓練投影與另50張新視角測試投影。",
+          "locator": "§4.1, PDF p.5"
+        },
+        {
+          "claim": "CT重建與新視角合成是兩個不同評估任務。",
+          "locator": "Tables1–2; §4.2"
+        }
+      ],
+      "boundaries": [
+        "Main experiment uses50 views,not2",
+        "Not coronary-specific or dynamic",
+        "15 scenes are not a clinical coronary cohort",
+        "Projection synthesis and volume accuracy are separate tasks"
+      ],
+      "fresh_metadata_check": "2026-11-18; primary publisher/conference/author page checked",
+      "reading_status": "Reused archived original-paper full text; targeted method/data/evaluation/limitation passages reread in this task.",
+      "pages": "11174–11183"
+    },
+    {
+      "id": "P6",
+      "authors": [
+        "Ruyi Zha",
+        "Tao Jun Lin",
+        "Yuanhao Cai",
+        "Jiwen Cao",
+        "Yanhao Zhang",
+        "Hongdong Li"
+      ],
+      "title": "R²-Gaussian: Rectifying Radiative Gaussian Splatting for Tomographic Reconstruction",
+      "venue": "NeurIPS 2024, Advances in Neural Information Processing Systems 37",
+      "year": 2024,
+      "publication_type": "main_conference",
+      "key": "Zha2024R2Gaussian",
+      "short": "R²-Gaussian",
+      "counts_toward_domain_minimum": true,
+      "doi": "10.52202/079017-1427",
+      "official_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/4f550cb7b30b59553e50cd08a9dbf068-Abstract-Conference.html",
+      "fulltext_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/4f550cb7b30b59553e50cd08a9dbf068-Paper-Conference.pdf",
+      "authors_repository": "https://github.com/Ruyi-Zha/r2_gaussian",
+      "local_text": "evidence/r2_gaussian.txt",
+      "claims": [
+        {
+          "claim": "標準3DGS有體密度積分偏差，需修正3D到2D高斯投影。",
+          "locator": "§4; Fig.3; Table2"
+        },
+        {
+          "claim": "主要稀疏CT設定為25/50/75視角；FDK初始化，不是雙視角冠脈方案。",
+          "locator": "§5.1; Table1; AppendixB"
+        },
+        {
+          "claim": "真實FIPS掃描物體以全視角FDK作參考，不是冠脈患者配對GT。",
+          "locator": "§5.1; AppendixB"
+        }
+      ],
+      "boundaries": [
+        "25–75 views rather than2",
+        "Real objects are pine cone,seashell,walnut,not coronary patients",
+        "Real3D reference is FDK pseudo-GT",
+        "Limited-angle artifacts and calibration error remain"
+      ],
+      "fresh_metadata_check": "2026-11-18; primary publisher/conference/author page checked",
+      "reading_status": "Reused archived original-paper full text; targeted method/data/evaluation/limitation passages reread in this task."
+    },
+    {
+      "id": "P7",
+      "key": "Zha2022NAF",
+      "short": "NAF",
+      "authors": [
+        "Ruyi Zha",
+        "Yanhao Zhang",
+        "Hongdong Li"
+      ],
+      "title": "NAF: Neural Attenuation Fields for Sparse-View CBCT Reconstruction",
+      "venue": "Medical Image Computing and Computer Assisted Intervention – MICCAI 2022, LNCS 13436, pp.442–452",
+      "year": 2022,
+      "publication_type": "main_conference",
+      "doi": "10.1007/978-3-031-16446-0_42",
+      "official_url": "https://link.springer.com/chapter/10.1007/978-3-031-16446-0_42",
+      "fulltext_url": "https://arxiv.org/pdf/2209.14540",
+      "authors_repository": "https://github.com/Ruyi-Zha/naf_cbct",
+      "local_text": "evidence/naf.txt",
+      "local_pdf": "evidence/naf.pdf",
+      "claims": [
+        {
+          "claim": "以連續座標函數表示衰減場，投影誤差逐例自監督，使用可學習雜湊編碼。",
+          "locator": "§2; Fig.1; PDF pp.3–5"
+        },
+        {
+          "claim": "主要實驗以50投影重建；人類器官投影為TIGRE模擬，另有矽膠主動脈模體實掃。",
+          "locator": "§3.1; Table1; PDF p.6"
+        }
+      ],
+      "boundaries": [
+        "50視角稀疏CBCT不是雙視角冠脈。",
+        "實掃主動脈模體參考CT由設備內建重建產生，不能稱獨立解剖真值。"
+      ],
+      "counts_toward_domain_minimum": true,
+      "fresh_metadata_check": "2026-11-18; primary conference/publisher/author-deposited full text verified",
+      "reading_status": "Fresh original PDF downloaded and text extracted; method, data, evaluation setup and boundaries read with page/section locators."
+    },
+    {
+      "id": "P8",
+      "key": "Song2023PINER",
+      "short": "PINER",
+      "authors": [
+        "Bowen Song",
+        "Liyue Shen",
+        "Lei Xing"
+      ],
+      "title": "PINER: Prior-Informed Implicit Neural Representation Learning for Test-Time Adaptation in Sparse-View CT Reconstruction",
+      "venue": "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), pp.1928–1938",
+      "year": 2023,
+      "publication_type": "main_conference",
+      "doi": null,
+      "official_url": "https://openaccess.thecvf.com/content/WACV2023/html/Song_PINER_Prior-Informed_Implicit_Neural_Representation_Learning_for_Test-Time_Adaptation_in_WACV_2023_paper.html",
+      "fulltext_url": "https://openaccess.thecvf.com/content/WACV2023/papers/Song_PINER_Prior-Informed_Implicit_Neural_Representation_Learning_for_Test-Time_Adaptation_in_WACV_2023_paper.pdf",
+      "authors_repository": "https://github.com/efzero/PINER",
+      "local_text": "evidence/piner.txt",
+      "local_pdf": "evidence/piner.pdf",
+      "claims": [
+        {
+          "claim": "測試時黑箱適應：依INR擬合軌跡構造輸入，將黑箱輸出嵌入另一INR，再結合物理一致性及先驗一致性優化。",
+          "locator": "§3.2–3.3; Eqs.2–3; PDF pp.4–5"
+        },
+        {
+          "claim": "LDCT及LIDC以256²切片、25個180°平行束角度模擬；不是雙視角三維冠脈。",
+          "locator": "§4.1; PDF pp.6–7"
+        }
+      ],
+      "boundaries": [
+        "source-free不等於無預訓練；仍需黑箱模型推理。",
+        "證據對應二維CT切片與未知噪音域偏移，不直接支持動態冠脈重建。"
+      ],
+      "counts_toward_domain_minimum": true,
+      "fresh_metadata_check": "2026-11-18; primary conference/publisher/author-deposited full text verified",
+      "reading_status": "Fresh original PDF downloaded and text extracted; method, data, evaluation setup and boundaries read with page/section locators."
+    },
+    {
+      "id": "P9",
+      "key": "Maas2025NeRFCA",
+      "short": "NeRF-CA",
+      "authors": [
+        "Kirsten W. H. Maas",
+        "Danny Ruijters",
+        "Anna Vilanova",
+        "Nicola Pezzotti"
+      ],
+      "title": "NeRF-CA: Dynamic Reconstruction of X-ray Coronary Angiography with Extremely Sparse-views",
+      "venue": "IEEE Transactions on Visualization and Computer Graphics, 31(10), pp.8782–8795",
+      "year": 2025,
+      "preprint_year": 2024,
+      "publication_type": "journal",
+      "doi": "10.1109/TVCG.2025.3579162",
+      "official_url": "https://doi.org/10.1109/TVCG.2025.3579162",
+      "author_institution_record": "https://research.tue.nl/en/publications/nerf-ca-dynamic-reconstruction-of-x-ray-coronary-angiography-with/",
+      "fulltext_url": "https://arxiv.org/pdf/2408.16355",
+      "authors_repository": "https://github.com/kirstenmaas/NeRF-CA",
+      "local_text": "evidence/nerf_ca.txt",
+      "local_pdf": "evidence/nerf_ca.pdf",
+      "claims": [
+        {
+          "claim": "動態冠脈與靜態背景分解，搭配動態稀疏及平滑約束；從至少4組視角序列演示4D重建。",
+          "locator": "§IV-C–E; §V; Fig.2; PDF pp.5–11"
+        },
+        {
+          "claim": "採XCAT與MAGIX兩個4D模體，每組10心動期；投影由TIGRE生成。",
+          "locator": "§V-A; PDF pp.7–8"
+        },
+        {
+          "claim": "資料刻意不含跨視角不同步、呼吸運動及對比劑不均勻等臨床因素。",
+          "locator": "§V-A; PDF p.8"
+        }
+      ],
+      "boundaries": [
+        "4組角度序列不等於4張或2張靜態投影。",
+        "模體重建不能描述為已完成真實ICA臨床三維驗證。"
+      ],
+      "counts_toward_domain_minimum": true,
+      "fresh_metadata_check": "2026-11-18; primary conference/publisher/author-deposited full text verified",
+      "reading_status": "Fresh original PDF downloaded and text extracted; method, data, evaluation setup and boundaries read with page/section locators."
+    },
+    {
+      "id": "P10",
+      "key": "Meng2026NeCAPP",
+      "short": "NeCA++",
+      "authors": [
+        "Deyu Meng",
+        "Mojtaba Lashgari",
+        "Yiying Wang",
+        "Abhirup Banerjee"
+      ],
+      "title": "Multi-stage NeRF for Efficient 3D Coronary Artery Reconstruction from Two Narrow-Angle Angiographic Projections",
+      "venue": "Medical Image Computing and Computer Assisted Intervention – MICCAI 2026, LNCS 16889, pp.583–593",
+      "year": 2026,
+      "conference_year": 2026,
+      "publisher_citation_year": 2027,
+      "first_online": "2026-09-25",
+      "publication_type": "main_conference",
+      "doi": "10.1007/978-3-032-38186-6_55",
+      "official_url": "https://papers.miccai.org/miccai-2026/0697-Paper5185.html",
+      "publisher_url": "https://link.springer.com/chapter/10.1007/978-3-032-38186-6_55",
+      "fulltext_url": "https://papers.miccai.org/miccai-2026/paper/5185_paper.pdf",
+      "authors_repository": "https://github.com/MultiMeDIA-Oxford/NeCAPP",
+      "local_text": "evidence/necapp.txt",
+      "local_pdf": "evidence/necapp.pdf",
+      "claims": [
+        {
+          "claim": "粗定位活躍區，逐級啟用較細雜湊，加入射線對齊與雙峰密度約束。",
+          "locator": "§2.2–2.3; Fig.1; PDF pp.4–5"
+        },
+        {
+          "claim": "ImageCAS40、ASOCA40及100合成RCA；由3D生成兩張投影並評估4組角度。",
+          "locator": "§3.1; PDF p.6"
+        },
+        {
+          "claim": "80³重建、RTX5080 16GB；消融完整方法耗時58秒。",
+          "locator": "§3.1; §3.3/Table2; PDF pp.6,9"
+        }
+      ],
+      "boundaries": [
+        "clinically realistic angles表示角度設計，不等於真實ICA資料驗證。",
+        "58秒只能連同硬體、80³解析度、實作及設定理解，不與NeCA原始128³耗時直接作公平倍數。",
+        "MICCAI官方引用年份2026；Springer Cite this paper用2027版權年，但已於2026-09-25上線；正文按MICCAI2026標識。"
+      ],
+      "counts_toward_domain_minimum": true,
+      "fresh_metadata_check": "2026-11-18; primary conference/publisher/author-deposited full text verified",
+      "reading_status": "Fresh original PDF downloaded and text extracted; method, data, evaluation setup and boundaries read with page/section locators."
+    },
+    {
+      "id": "P11",
+      "key": "Kassis2026ScientificAgentSkills",
+      "short": "Scientific Agent Skills",
+      "authors": [
+        "Timothy Kassis",
+        "Vinayak Agarwal",
+        "Yuhuan He",
+        "Darshil Patel",
+        "Aubrey M. Brueckner"
+      ],
+      "title": "Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents",
+      "venue": "arXiv preprint arXiv:2609.00065",
+      "year": 2026,
+      "publication_type": "preprint",
+      "doi": "10.48550/arXiv.2609.00065",
+      "official_url": "https://arxiv.org/abs/2609.00065",
+      "current_version": "v2, revised 2026-09-02",
+      "counts_toward_domain_minimum": false,
+      "reading_status": "Fresh author-deposited arXiv metadata and abstract checked; not read as domain evidence.",
+      "claims": [
+        {
+          "claim": "本次文獻檢索參考其程序化研究輔助流程；此項僅作工具/AI輔助揭露。",
+          "locator": "arXiv abstract and metadata, accessed 2026-11-18"
+        }
+      ],
+      "boundaries": [
+        "非冠脈／斷層重建領域論文，不計入10篇相關文獻。",
+        "arXiv頁未列已正式出版的期刊或會議；不稱已同行評審。"
+      ]
+    }
+  ]
+}
