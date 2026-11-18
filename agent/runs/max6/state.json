@@ -1,0 +1,12 @@
+{
+  "run_id": "max6",
+  "max_steps": 6,
+  "tool_calls": 6,
+  "read_sources": [
+    "S1",
+    "S2",
+    "S3"
+  ],
+  "written": true,
+  "status": "completed"
+}
