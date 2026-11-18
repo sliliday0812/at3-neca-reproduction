@@ -1,0 +1,31 @@
+DDE:
+- 235.93954413621998
+- 298.0065686639
+DSD:
+- 993.0
+- 1055.0
+DSO:
+- 757.06045586378
+- 756.9934313361
+dDetector:
+- 1.112
+- 1.112
+dVoxel:
+- 1.6
+- 1.6
+- 1.6
+datadir: /home/pengct/projects/at4_neca_20261118/data/observed/projections.npy
+first_projection_angle:
+- 29.7
+- 0.1
+nDetector:
+- 128
+- 128
+nVoxel:
+- 64
+- 64
+- 64
+numTrain: 2
+second_projection_angle:
+- 2
+- 29

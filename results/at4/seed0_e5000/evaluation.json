@@ -1,0 +1,16 @@
+{
+  "threshold": 0.5,
+  "threshold_rule": "strict >0.5",
+  "tp": 361,
+  "fp": 149,
+  "fn": 123,
+  "dice": 0.7263581488933601,
+  "iou": 0.5703001579778831,
+  "predicted_foreground": 510,
+  "reference_foreground": 484,
+  "projection_mse": 0.00011909365951991314,
+  "finite": true,
+  "volume_sha256": "f7a5a30ecf3f51411ecf6654c4a99044a09dbdbc95d9aa7d343c9559ed718083",
+  "evaluation_reference_sha256": "dac51f7ab18ecae895bad0c5052bc0c7b82f5c4fb6c4a4683bc9206725fb7406",
+  "evaluation_scope": "one 64^3 processed digital reference, synthetic two-view geometry, not patient/generalization accuracy"
+}
