@@ -3,7 +3,7 @@ from pathlib import Path
 import argparse,hashlib,os,subprocess,sys,zipfile
 ROOT=Path(__file__).resolve().parent
 ARCHIVE='AT3-Agent-evidence.D26092110395彭楚天.zip'
-EXPECTED='5794571adce18eae9b3ae43376659dfef7f8334f5230df588b92f60b266a0afb'
+EXPECTED='02453dcd6d24cb44b099b5fb50bc400f85b885dcaf4f2f2c75c8e3591a356093'
 PROJECT='AT3-Agent.D26092110395彭楚天'
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
