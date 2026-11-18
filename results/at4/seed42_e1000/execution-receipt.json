@@ -1,0 +1,6 @@
+{
+  "started": "2026-11-18T11:23:00+08:00",
+  "finished": "2026-11-18T11:25:17+08:00",
+  "training_wrapper_exit": 1,
+  "note": "Completed requested optimizer updates; empty short-budget output is retained and fails the nonempty quality gate."
+}

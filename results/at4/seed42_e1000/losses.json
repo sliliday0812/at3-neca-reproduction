@@ -1,0 +1,57 @@
+[
+  {
+    "epoch_index": 0,
+    "optimizer_update": 1,
+    "projection_mse_before_update": 2166.00390625
+  },
+  {
+    "epoch_index": 100,
+    "optimizer_update": 101,
+    "projection_mse_before_update": 1.5261168479919434
+  },
+  {
+    "epoch_index": 200,
+    "optimizer_update": 201,
+    "projection_mse_before_update": 1.4771702289581299
+  },
+  {
+    "epoch_index": 300,
+    "optimizer_update": 301,
+    "projection_mse_before_update": 1.468611478805542
+  },
+  {
+    "epoch_index": 400,
+    "optimizer_update": 401,
+    "projection_mse_before_update": 1.4621943235397339
+  },
+  {
+    "epoch_index": 500,
+    "optimizer_update": 501,
+    "projection_mse_before_update": 1.4575576782226562
+  },
+  {
+    "epoch_index": 600,
+    "optimizer_update": 601,
+    "projection_mse_before_update": 1.45419442653656
+  },
+  {
+    "epoch_index": 700,
+    "optimizer_update": 701,
+    "projection_mse_before_update": 1.4516146183013916
+  },
+  {
+    "epoch_index": 800,
+    "optimizer_update": 801,
+    "projection_mse_before_update": 1.449352502822876
+  },
+  {
+    "epoch_index": 900,
+    "optimizer_update": 901,
+    "projection_mse_before_update": 1.4468421936035156
+  },
+  {
+    "epoch_index": 1000,
+    "optimizer_update": 1001,
+    "projection_mse_before_update": 1.4426193237304688
+  }
+]
