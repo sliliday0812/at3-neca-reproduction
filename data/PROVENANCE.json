@@ -1,0 +1,16 @@
+{
+  "upstream_code_url": "https://github.com/WangStephen/NeCA",
+  "upstream_commit": "77246df0826a031c12072f6ea64bb3370a0baf6b",
+  "upstream_code_license": "MIT (vendor/NeCA/LICENSE)",
+  "data_origin": "DeepCA public CCTA.zip, member CCTA_GT/1.npy; same-source processed binary volume, not original hospital CT",
+  "derivation": "2x2x2 max-pool from128^3 to64^3; nominal voxel spacing1.6; two continuous line-integral projections using author NeCA projector; no patient affine/spacing metadata provided",
+  "data_usage": "classroom reproduction; upstream data redistribution permission not established by code MIT license; confirm data rights before making repository public",
+  "training_inputs": [
+    "data/observed/projections.npy",
+    "data/observed/geometry.yaml"
+  ],
+  "evaluation_reference": "data/evaluation_only/reference_A.npy",
+  "historical_run_date": "2026-10-08",
+  "assembly_date": "2026-10-28",
+  "scope": "single processed synthetic case; no clinical or population generalization claim"
+}
