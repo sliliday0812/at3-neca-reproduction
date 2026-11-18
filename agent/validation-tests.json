@@ -1,0 +1,52 @@
+{
+  "replay": {
+    "max3": {
+      "replay_matches_checks": true,
+      "pass": false
+    },
+    "max6": {
+      "replay_matches_checks": true,
+      "pass": true
+    }
+  },
+  "negative_checks": {
+    "unknown_citation": {
+      "rejected": true,
+      "failed_checks": [
+        "citations_resolve_to_read_source_claims",
+        "required_evidence_covered",
+        "cited_paraphrases_match_checked_source_records"
+      ]
+    },
+    "unread_source": {
+      "rejected": true,
+      "failed_checks": [
+        "three_distinct_sources_read",
+        "citations_resolve_to_read_source_claims",
+        "observations_hash_chain_valid"
+      ]
+    },
+    "changed_claim": {
+      "rejected": true,
+      "failed_checks": [
+        "cited_paraphrases_match_checked_source_records"
+      ]
+    },
+    "altered_source": {
+      "rejected": true,
+      "failed_checks": [
+        "source_file_hashes_match"
+      ]
+    },
+    "budget_bypass": {
+      "rejected": true,
+      "trace_unchanged": true
+    },
+    "run_path_traversal": {
+      "rejected": true
+    }
+  },
+  "request_observation_pairs_and_hashes": "PASS",
+  "first_three_requests_identical": "PASS",
+  "pass": true
+}
