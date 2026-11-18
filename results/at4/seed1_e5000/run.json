@@ -1,0 +1,29 @@
+{
+  "date_utc": "2026-11-18T03:23:02.947153+00:00",
+  "seed": 1,
+  "seconds_including_setup": 588.3208032129332,
+  "epoch_index": 5000,
+  "optimizer_updates": 5001,
+  "shape": [
+    64,
+    64,
+    64
+  ],
+  "finite": true,
+  "foreground_at_0p5": 464,
+  "projection_mse_total": 7.41288677090779e-05,
+  "reload_max_abs_difference": 0.0,
+  "checkpoint_sha256": "b4009c1d9846972b9a084c05efed01aba7937d5f6dbaaf3fc98ddc361c4aa493",
+  "input_sha256": "00e852fbb7f32076003289342c4e1a85db1814755c85df457840c394de1ceb92",
+  "training_reference_loaded": false,
+  "upstream_commit": "77246df0826a031c12072f6ea64bb3370a0baf6b",
+  "cuda_device": "NVIDIA A30",
+  "python": "3.10.16",
+  "torch": "2.5.1",
+  "cuda": "11.8",
+  "numpy": "1.26.2",
+  "odl": "0.8.3",
+  "astra": "2.2.0",
+  "source_note": "pinned author loop/network/projector/loss; only paths,64^3/128^2 config,and logging wrapper changed",
+  "determinism_note": "fixed seed, CUDA hash backward uses atomicAdd; exact bitwise repeated training is not claimed"
+}

@@ -1,0 +1,257 @@
+[
+  {
+    "epoch_index": 0,
+    "optimizer_update": 1,
+    "projection_mse_before_update": 2185.52001953125
+  },
+  {
+    "epoch_index": 100,
+    "optimizer_update": 101,
+    "projection_mse_before_update": 1.5284746885299683
+  },
+  {
+    "epoch_index": 200,
+    "optimizer_update": 201,
+    "projection_mse_before_update": 1.4753658771514893
+  },
+  {
+    "epoch_index": 300,
+    "optimizer_update": 301,
+    "projection_mse_before_update": 1.4677339792251587
+  },
+  {
+    "epoch_index": 400,
+    "optimizer_update": 401,
+    "projection_mse_before_update": 1.461713194847107
+  },
+  {
+    "epoch_index": 500,
+    "optimizer_update": 501,
+    "projection_mse_before_update": 1.45710027217865
+  },
+  {
+    "epoch_index": 600,
+    "optimizer_update": 601,
+    "projection_mse_before_update": 1.4535168409347534
+  },
+  {
+    "epoch_index": 700,
+    "optimizer_update": 701,
+    "projection_mse_before_update": 1.4506076574325562
+  },
+  {
+    "epoch_index": 800,
+    "optimizer_update": 801,
+    "projection_mse_before_update": 1.4480645656585693
+  },
+  {
+    "epoch_index": 900,
+    "optimizer_update": 901,
+    "projection_mse_before_update": 1.4455976486206055
+  },
+  {
+    "epoch_index": 1000,
+    "optimizer_update": 1001,
+    "projection_mse_before_update": 1.4428614377975464
+  },
+  {
+    "epoch_index": 1100,
+    "optimizer_update": 1101,
+    "projection_mse_before_update": 1.438948392868042
+  },
+  {
+    "epoch_index": 1200,
+    "optimizer_update": 1201,
+    "projection_mse_before_update": 1.4300720691680908
+  },
+  {
+    "epoch_index": 1300,
+    "optimizer_update": 1301,
+    "projection_mse_before_update": 1.4070472717285156
+  },
+  {
+    "epoch_index": 1400,
+    "optimizer_update": 1401,
+    "projection_mse_before_update": 1.16572105884552
+  },
+  {
+    "epoch_index": 1500,
+    "optimizer_update": 1501,
+    "projection_mse_before_update": 0.19365334510803223
+  },
+  {
+    "epoch_index": 1600,
+    "optimizer_update": 1601,
+    "projection_mse_before_update": 0.038372691720724106
+  },
+  {
+    "epoch_index": 1700,
+    "optimizer_update": 1701,
+    "projection_mse_before_update": 0.00992780551314354
+  },
+  {
+    "epoch_index": 1800,
+    "optimizer_update": 1801,
+    "projection_mse_before_update": 0.005405739415436983
+  },
+  {
+    "epoch_index": 1900,
+    "optimizer_update": 1901,
+    "projection_mse_before_update": 0.0035071372985839844
+  },
+  {
+    "epoch_index": 2000,
+    "optimizer_update": 2001,
+    "projection_mse_before_update": 0.0025385459885001183
+  },
+  {
+    "epoch_index": 2100,
+    "optimizer_update": 2101,
+    "projection_mse_before_update": 0.0019765926990658045
+  },
+  {
+    "epoch_index": 2200,
+    "optimizer_update": 2201,
+    "projection_mse_before_update": 0.001598652102984488
+  },
+  {
+    "epoch_index": 2300,
+    "optimizer_update": 2301,
+    "projection_mse_before_update": 0.0013293717056512833
+  },
+  {
+    "epoch_index": 2400,
+    "optimizer_update": 2401,
+    "projection_mse_before_update": 0.0011372219305485487
+  },
+  {
+    "epoch_index": 2500,
+    "optimizer_update": 2501,
+    "projection_mse_before_update": 0.0009897383861243725
+  },
+  {
+    "epoch_index": 2600,
+    "optimizer_update": 2601,
+    "projection_mse_before_update": 0.0008677637088112533
+  },
+  {
+    "epoch_index": 2700,
+    "optimizer_update": 2701,
+    "projection_mse_before_update": 0.0007562209502793849
+  },
+  {
+    "epoch_index": 2800,
+    "optimizer_update": 2801,
+    "projection_mse_before_update": 0.0006639271159656346
+  },
+  {
+    "epoch_index": 2900,
+    "optimizer_update": 2901,
+    "projection_mse_before_update": 0.0005858969525434077
+  },
+  {
+    "epoch_index": 3000,
+    "optimizer_update": 3001,
+    "projection_mse_before_update": 0.0005214380798861384
+  },
+  {
+    "epoch_index": 3100,
+    "optimizer_update": 3101,
+    "projection_mse_before_update": 0.0004672877839766443
+  },
+  {
+    "epoch_index": 3200,
+    "optimizer_update": 3201,
+    "projection_mse_before_update": 0.00041778525337576866
+  },
+  {
+    "epoch_index": 3300,
+    "optimizer_update": 3301,
+    "projection_mse_before_update": 0.0003717877552844584
+  },
+  {
+    "epoch_index": 3400,
+    "optimizer_update": 3401,
+    "projection_mse_before_update": 0.0003329010505694896
+  },
+  {
+    "epoch_index": 3500,
+    "optimizer_update": 3501,
+    "projection_mse_before_update": 0.00029939471278339624
+  },
+  {
+    "epoch_index": 3600,
+    "optimizer_update": 3601,
+    "projection_mse_before_update": 0.0002681619662325829
+  },
+  {
+    "epoch_index": 3700,
+    "optimizer_update": 3701,
+    "projection_mse_before_update": 0.00024092903186101466
+  },
+  {
+    "epoch_index": 3800,
+    "optimizer_update": 3801,
+    "projection_mse_before_update": 0.00021566083887591958
+  },
+  {
+    "epoch_index": 3900,
+    "optimizer_update": 3901,
+    "projection_mse_before_update": 0.0001937483175424859
+  },
+  {
+    "epoch_index": 4000,
+    "optimizer_update": 4001,
+    "projection_mse_before_update": 0.00017396549810655415
+  },
+  {
+    "epoch_index": 4100,
+    "optimizer_update": 4101,
+    "projection_mse_before_update": 0.00015605179942213
+  },
+  {
+    "epoch_index": 4200,
+    "optimizer_update": 4201,
+    "projection_mse_before_update": 0.0001381307520205155
+  },
+  {
+    "epoch_index": 4300,
+    "optimizer_update": 4301,
+    "projection_mse_before_update": 0.00012471480295062065
+  },
+  {
+    "epoch_index": 4400,
+    "optimizer_update": 4401,
+    "projection_mse_before_update": 0.00011399229697417468
+  },
+  {
+    "epoch_index": 4500,
+    "optimizer_update": 4501,
+    "projection_mse_before_update": 0.00010493493755348027
+  },
+  {
+    "epoch_index": 4600,
+    "optimizer_update": 4601,
+    "projection_mse_before_update": 9.762950503500178e-05
+  },
+  {
+    "epoch_index": 4700,
+    "optimizer_update": 4701,
+    "projection_mse_before_update": 9.108788799494505e-05
+  },
+  {
+    "epoch_index": 4800,
+    "optimizer_update": 4801,
+    "projection_mse_before_update": 8.494048961438239e-05
+  },
+  {
+    "epoch_index": 4900,
+    "optimizer_update": 4901,
+    "projection_mse_before_update": 7.922526856418699e-05
+  },
+  {
+    "epoch_index": 5000,
+    "optimizer_update": 5001,
+    "projection_mse_before_update": 7.412976992782205e-05
+  }
+]
