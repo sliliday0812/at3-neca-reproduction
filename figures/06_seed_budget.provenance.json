@@ -1,0 +1,32 @@
+{
+  "inputs": [
+    {
+      "source": "results/at4/seed0_e5000",
+      "volume_sha256": "f7a5a30ecf3f51411ecf6654c4a99044a09dbdbc95d9aa7d343c9559ed718083",
+      "projection_sha256": "aa21b6897f4eba907eb1e6dcda76a2b99918f91d241bd2786b64d0a06aa72f9e"
+    },
+    {
+      "source": "results/at4/seed1_e5000",
+      "volume_sha256": "5a04d9b12c901e3862756a86246156cc65c79381c9ae2c605a44e9e20ebe3a2e",
+      "projection_sha256": "5083e0046e5b69eda3cd191da722cf57e256301da37f8781deb454f281150faf"
+    },
+    {
+      "source": "results/at4/seed42_e1000",
+      "volume_sha256": "54390ce8d1aa6aec36ba973d777fcd4a33708136e873816e598f1104847dd378",
+      "projection_sha256": "938814d62684c5eb16e6a2279f657f1b7f133e051581f0776feec908f22ddc05"
+    },
+    {
+      "source": "results/at4/seed42_e3000",
+      "volume_sha256": "fc9646c6b475aa19ae40e33329f3825da56f8ff6865f63d40a431de157611ecd",
+      "projection_sha256": "e066616b08fbd2c38259f2ee8e8cd3701ac4483852edac8d9d1c80bcdb89c901"
+    },
+    {
+      "source": "results/current",
+      "volume_sha256": "566c73554531f71a3daedc310ac2c5d18778da5e8c8c99766924ba868a11a07a",
+      "projection_sha256": "19c8033946b4b86ed307a421468b7e46ae6ff35206cc345cda6caf4bb58f9102"
+    }
+  ],
+  "description": "Discrete same-case seeds and budgets; no population confidence intervals; seed42/5001 is archived 2026-10-28, other runs 2026-11-18.",
+  "transformations": "fixed >0.5; full 3D Dice/IoU; float64 projection MSE; no smoothing; lines connect only observed budget points",
+  "replicates": "n=3 computational seeds on one processed case; no independence across patients"
+}

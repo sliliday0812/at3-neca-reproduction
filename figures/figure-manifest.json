@@ -1,0 +1,61 @@
+{
+  "purpose": "AT3 classroom reproduction, general readable figures; no journal-specific compliance claim",
+  "canvas_note": "Figure01 intentionally uses a tight bounding box with padding to retain all3D axis labels; exported pixel sizes are recorded per figure",
+  "transforms": "threshold strictly >0.5; marching cubes level0.5; nominal1.6mm voxel; MIPs; absolute projection residual; log loss scale; no smoothing/mesh repair",
+  "sample_unit": "one processed digital reference, one current run; three historical conditions on same case, not independent patients",
+  "inputs_sha256": {
+    "results/current/final_volume.npy": "566c73554531f71a3daedc310ac2c5d18778da5e8c8c99766924ba868a11a07a",
+    "results/current/final_projections.npy": "19c8033946b4b86ed307a421468b7e46ae6ff35206cc345cda6caf4bb58f9102",
+    "data/evaluation_only/reference_A.npy": "dac51f7ab18ecae895bad0c5052bc0c7b82f5c4fb6c4a4683bc9206725fb7406"
+  },
+  "matplotlib_version": "3.11.2",
+  "numpy_version": "2.5.5",
+  "figures": [
+    {
+      "file": "01_inputs_and_3d.png",
+      "description": "Inputs A/B share intensity limits. Lower surfaces use marching cubes at0.5, same camera and axes in nominal mm; no smoothing or connected-component removal. Occluded branches cannot be judged from this angle alone.",
+      "pixel_size": [
+        2070,
+        1361
+      ],
+      "sha256": "061a0e2a542440d5f98b9b94375ec8abdd6a72fbcc80d2ce45d30f6076bcf60f"
+    },
+    {
+      "file": "02_orthogonal_errors.png",
+      "description": "Top/middle are binary reference/reconstruction MIPs across all three axes; bottom projects voxel TP/FP/FN with priority FN over FP over TP. MIPs can hide depth and overlap, so Dice is calculated in3D, never from these pictures.",
+      "pixel_size": [
+        2200,
+        1320
+      ],
+      "sha256": "74d57cdf58dccff370fb9769d13635883b957a2d26af03b85c7e8026417edd13"
+    },
+    {
+      "file": "03_projection_residuals.png",
+      "description": "Per-view measured synthetic line integral, final forward projection and absolute residual; observed/reprojected share scales globally and residuals share a separate global scale. Good2D fit does not establish true3D accuracy.",
+      "pixel_size": [
+        2420,
+        1430
+      ],
+      "sha256": "297d97305e767fe4ba1992e8e91c280fb19cb5beadbd1db23057bc6b493c28a0"
+    },
+    {
+      "file": "04_training_loss.png",
+      "description": "Recorded pre-update MSE sampled every100 indices and final index; logarithmic y scale, no smoothing. The final reported projection MSE is evaluated after the final update and may differ from the last sampled pre-update loss.",
+      "pixel_size": [
+        1980,
+        704
+      ],
+      "sha256": "afa21f6c1b070967dce07785fda7182cd1ee19cb8bfc5e6f13dee71a6c4e2820"
+    },
+    {
+      "file": "05_historical_stress.png",
+      "description": "Previously executed C0/C1/C2 results under the same initialization, resolution and author geometry. MIPs collapse axis2; scores are full3D Dice against reference A. C1/C2 perturbation input magnitudes differ, so their difficulty cannot be ranked.",
+      "pixel_size": [
+        2420,
+        792
+      ],
+      "sha256": "a9b63ac8eef9f6c0156dc5333fa7569069a7d68065b774ded06ed5dd610b902a"
+    }
+  ],
+  "software_reference": "Kassis et al.2026, Scientific Agent Skills, arXiv2609.00065 https://doi.org/10.48550/arXiv.2609.00065"
+}
