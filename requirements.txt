@@ -1,0 +1,2 @@
+# CPU analysis only; CUDA training dependencies are separate.
+-r requirements-analysis.txt

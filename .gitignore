@@ -1,15 +1,9 @@
 __pycache__/
 *.pyc
+.DS_Store
+.~*
+~$*
 .venv/
-*.tar
-*.pt
-*.pth
+*/checkpoints/
 *.so
 *.o
-build/
-events.out.tfevents.*
-results/current/checkpoints/
-# Upstream dataset redistribution permission is separate from the code license.
-data/**/*.npy
-results/**/*.npy
-results/current/runtime-*.yaml

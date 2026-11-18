@@ -1,23 +1,32 @@
-"""Verified entry point for the complete NeCA coursework source archive."""
+"""Run the expanded AT4 source tree; no archive extraction is required."""
 from pathlib import Path
-import argparse,hashlib,subprocess,sys,zipfile
-ROOT=Path(__file__).resolve().parent
-ARCHIVE='AT3-NeCA-code.D26092110395彭楚天.zip'
-EXPECTED='1154598dde54ea9728e13b5fee26282be2ab1a5b97d026fd6d0c7fffcfe9002e'
+import argparse
+import os
+import subprocess
+import sys
+
+ROOT = Path(__file__).resolve().parent
+ACTIONS = {
+    'verify': ('src/verify_upstream.py', []),
+    'analyze-at4': ('src/analyze_at4.py', []),
+    'evaluate': ('src/evaluate.py', []),
+    'plot': ('src/plot_results.py', []),
+    'train': ('src/train.py', []),
+    'agent-validate': ('agent/scripts/agent_lab.py', ['validate']),
+    'agent-replay': ('agent/scripts/agent_lab.py', ['replay']),
+    'agent-selfcheck': ('agent/scripts/self_check.py', []),
+}
 
 def main():
-    parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('action',choices=['verify','evaluate','plot','train'])
-    args,extra=parser.parse_known_args()
-    archive=ROOT/ARCHIVE
-    if hashlib.sha256(archive.read_bytes()).hexdigest()!=EXPECTED:raise SystemExit('Archive SHA256 mismatch')
-    project=ROOT/'NeCA-reproduction'
-    if not project.exists():
-        with zipfile.ZipFile(archive) as z:
-            for info in z.infolist():
-                p=Path(info.filename)
-                if p.is_absolute() or '..' in p.parts or p.parts[0]!='NeCA-reproduction':raise SystemExit('Unsafe archive path')
-            z.extractall(ROOT)
-    script={'verify':'verify_upstream.py','evaluate':'evaluate.py','plot':'plot_results.py','train':'train.py'}[args.action]
-    raise SystemExit(subprocess.call([sys.executable,str(project/'scripts'/script),*extra],cwd=project))
-if __name__=='__main__':main()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('action', choices=ACTIONS)
+    args, extra = parser.parse_known_args()
+    script, prefix = ACTIONS[args.action]
+    if args.action == 'agent-validate' and not extra:
+        extra = ['max6']
+    cwd = ROOT/'agent' if args.action.startswith('agent-') else ROOT
+    env = {**os.environ, 'PYTHONDONTWRITEBYTECODE': '1'}
+    raise SystemExit(subprocess.call([sys.executable, str(ROOT/script), *prefix, *extra], cwd=cwd, env=env))
+
+if __name__ == '__main__':
+    main()
