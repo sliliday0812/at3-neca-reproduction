@@ -1,0 +1,28 @@
+{
+  "id": "S2",
+  "title": "3DGR-CAR: Coronary artery reconstruction from ultra-sparse 2D X-ray views with a 3D Gaussians representation",
+  "year": 2024,
+  "venue": "MICCAI 2024",
+  "url": "https://papers.miccai.org/miccai-2024/005-Paper1015.html",
+  "doi": "10.1007/978-3-031-72104-5_2",
+  "archived_source_access_date": "2026-10-28",
+  "raw_text_sha256": "8182571cf722f8c1590f7620b60c4ac221237f8865267d66a5b0c85cf0714ccf",
+  "raw_text_label": "3dgr_car.txt",
+  "record_kind": "student-curated digest of primary source; checked by Codex against archived full text",
+  "short_verbatim_evidence": "We employ a U-Net to provide initialization of Gaussian centers.",
+  "claims": [
+    {
+      "id": "C1",
+      "text": "3DGR-CAR先訓練U-Net預測高斯中心，再逐例優化高斯表示，不能視為完全無預訓練方法。",
+      "locator": "PDF pp.3–6, Section 2",
+      "kind": "paper_method"
+    },
+    {
+      "id": "C2",
+      "text": "3DGR-CAR採ImageCAS與ASOCA的CCTA衍生模擬投影；資料與指標不同，不能和NeCA跨文獻直接排名。",
+      "locator": "PDF pp.6–7, Section 3.1; Table 1",
+      "kind": "paper_fact_and_bounded_inference"
+    }
+  ],
+  "boundary": "Statements tagged bounded_inference are critical interpretation, not additional author experiments."
+}

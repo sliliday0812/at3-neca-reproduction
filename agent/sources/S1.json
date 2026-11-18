@@ -1,0 +1,28 @@
+{
+  "id": "S1",
+  "title": "NeCA: 3D Coronary Artery Tree Reconstruction from Two 2D Projections via Neural Implicit Representation",
+  "year": 2024,
+  "venue": "Bioengineering",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11673243/",
+  "doi": "10.3390/bioengineering11121227",
+  "archived_source_access_date": "2026-10-28",
+  "raw_text_sha256": "50034ed0c4e4d818d59ffdc246404032b548c283064ce99c39d2b21582fa14dd",
+  "raw_text_label": "neca_readable.txt",
+  "record_kind": "student-curated digest of primary source; checked by Codex against archived full text",
+  "short_verbatim_evidence": "Our method neither requires 3D ground truth for supervision nor large training datasets.",
+  "claims": [
+    {
+      "id": "C1",
+      "text": "NeCA以兩張投影及已知幾何逐例優化隱式血管場，不需隊列預訓練或三維GT監督。",
+      "locator": "Introduction; Sections 2.1–2.3",
+      "kind": "paper_method"
+    },
+    {
+      "id": "C2",
+      "text": "NeCA的觀測由分割CCTA模擬；合成評估不能直接當成真實ICA的三維驗證。",
+      "locator": "Section 2.1; Discussion",
+      "kind": "paper_fact_and_bounded_inference"
+    }
+  ],
+  "boundary": "Statements tagged bounded_inference are critical interpretation, not additional author experiments."
+}

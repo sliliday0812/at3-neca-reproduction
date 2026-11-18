@@ -1,0 +1,28 @@
+{
+  "id": "S3",
+  "title": "DeepCA: Deep Learning-Based 3D Coronary Artery Tree Reconstruction from Two 2D Non-Simultaneous X-Ray Angiography Projections",
+  "year": 2025,
+  "venue": "WACV 2025",
+  "url": "https://openaccess.thecvf.com/content/WACV2025/html/Wang_DeepCA_Deep_Learning-Based_3D_Coronary_Artery_Tree_Reconstruction_from_Two_WACV_2025_paper.html",
+  "doi": "10.1109/WACV61041.2025.00043",
+  "archived_source_access_date": "2026-10-28",
+  "raw_text_sha256": "1bd37ed2e9489868d47b6228f42fd4d5490209df7efab6f722b90fc5ced2958c",
+  "raw_text_label": "deepca.txt",
+  "record_kind": "student-curated digest of primary source; checked by Codex against archived full text",
+  "short_verbatim_evidence": "we introduce rigid transformations to the CCTA data before performing forward projection on the second projection plane",
+  "claims": [
+    {
+      "id": "C1",
+      "text": "DeepCA以監督式生成模型處理非同時雙投影；訓練資料的運動模擬主要為剛體旋轉與平移。",
+      "locator": "PDF pp.3–4, Sections 3.1–3.2; Figure 1",
+      "kind": "paper_method"
+    },
+    {
+      "id": "C2",
+      "text": "DeepCA的臨床評估使用二維再投影；這不足以證明任意非剛體補償或三維解剖準確。",
+      "locator": "PDF pp.6–7, Sections 4.3–4.4",
+      "kind": "paper_fact_and_bounded_inference"
+    }
+  ],
+  "boundary": "Statements tagged bounded_inference are critical interpretation, not additional author experiments."
+}

@@ -1,0 +1,49 @@
+{
+  "pack_id": "neca-offline-sources-v1",
+  "prepared_date": "2026-11-18",
+  "owner": "student-curated from previously archived primary literature",
+  "teacher_supplied": false,
+  "teacher_acceptance": "not confirmed",
+  "scope": "three checked source digests; not three new full-paper reads or live web retrieval",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "NeCA: 3D Coronary Artery Tree Reconstruction from Two 2D Projections via Neural Implicit Representation",
+      "tags": [
+        "NeCA",
+        "coronary",
+        "two-view",
+        "implicit",
+        "self-supervised"
+      ],
+      "file": "S1.json",
+      "sha256": "a50661137166083aab137c85a0264aeddf89b110865312797b77aecece4a24d0"
+    },
+    {
+      "id": "S2",
+      "title": "3DGR-CAR: Coronary artery reconstruction from ultra-sparse 2D X-ray views with a 3D Gaussians representation",
+      "tags": [
+        "3DGR-CAR",
+        "coronary",
+        "two-view",
+        "Gaussian",
+        "supervised"
+      ],
+      "file": "S2.json",
+      "sha256": "153071181b85da99740f3cf7c2d2fefc3678452dc6d72f5fe61f55de6f949626"
+    },
+    {
+      "id": "S3",
+      "title": "DeepCA: Deep Learning-Based 3D Coronary Artery Tree Reconstruction from Two 2D Non-Simultaneous X-Ray Angiography Projections",
+      "tags": [
+        "DeepCA",
+        "coronary",
+        "two-view",
+        "non-simultaneous",
+        "motion"
+      ],
+      "file": "S3.json",
+      "sha256": "1bc8b00a9e57b30f5e3dc646f4b97ba645ae7bb90c352304430b16f51dbbcaf8"
+    }
+  ]
+}
