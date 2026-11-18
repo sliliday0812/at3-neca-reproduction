@@ -1,0 +1,32 @@
+encoder:
+  base_resolution: 16
+  encoding: hashgrid
+  input_dim: 3
+  level_dim: 2
+  log2_hashmap_size: 19
+  num_levels: 16
+exp:
+  dataconfig: /home/pengct/projects/at4_neca_20261118/results/at4/seed42_e3000/runtime-geometry.yaml
+  expdir: /home/pengct/projects/at4_neca_20261118/results/at4/seed42_e3000
+  expname: checkpoints
+log:
+  i_eval: 3000
+  i_save: 3000
+network:
+  bound: 0.3
+  hidden_dim: 256
+  last_activation: sigmoid
+  net_type: mlp
+  num_layers: 8
+  out_dim: 1
+  skips:
+  - 4
+render:
+  n_fine: 0
+  netchunk: 32768
+train:
+  epoch: 3000
+  lrate: 0.0001
+  lrate_gamma: 0.1
+  lrate_step: 5000
+  resume: false
